@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Inherit Camera-related flags
 TARGET_USES_MIUI_CAMERA := true
@@ -30,9 +30,16 @@ BUILD_FINGERPRINT := POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.2.0.TKH
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 WITH_GMS := true
-
-MATRIXX_BUILD_TYPE := Official
+TARGET_BUILD_PACKAGE := 3
+TARGET_INCLUDE_MATLOG := true
+ 
+# Maintainer
+ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := onettboots
 
 # Pixel stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -41,4 +48,3 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_WALLEFFECT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-TARGET_SUPPORTS_QUICK_TAP := true
