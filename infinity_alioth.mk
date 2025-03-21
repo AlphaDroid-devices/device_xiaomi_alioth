@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit Camera-related flags
 TARGET_USES_MIUI_CAMERA := true
@@ -17,7 +17,6 @@ TARGET_INCLUDES_MIUI_CAMERA := true
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
-$(call inherit-product, vendor/voltage-priv/keys/keys.mk)
 
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
@@ -33,9 +32,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # BLKI
 TARGET_ENABLE_BLUR := true
-VOLTAGE_BUILD_TYPE := UNOFFICIAL
-VOLTAGE_MAINTAINER := Onett Boots
-WITH_GMS := true
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := Onett Boots
+WITH_GAPPS := true
 
 # Pixel stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
