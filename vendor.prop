@@ -39,3 +39,10 @@ ro.config.media_vol_steps=16
 # Display
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
+
+
+ro.product.marketname=Poco F3/Redmi K40
+ro.rising.soc=Snapdragon 8 Elite
+ro.rising.battery=4520 mAh
+ro.rising.display=1080 x 2400, 120 Hz
+ro.rising.camera=50MP + 8MP + 2MP
